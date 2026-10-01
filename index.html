@@ -1,8 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+    
     </head>
+    <title>meu site</title>
+    <script type="text/javascript">
+        function soma(){
+            let x, y, z;
+            x = parseInt(document.getElementById("n1").value); 
+            console.log("valor de x: ", x);
+            y = parseInt(document.getElementById("n2").value);
+            console.log("valor de y: ", y);
+            z = x+y;
+            console.log("valor de z: ", z);
+            document.getElementById("resultado").value=z;
+        }
+            </script>
+            <label for="n1">primeiro numero</label><br>
+            <input type="text" id="n1"><br><br>
+            <label for="n2">segundo numero</label><br>
+            <input type="text" id="n2"><br><br>
+            <button onclick="soma()">calcular</button><br><br>
+            <label for="resultado">resultado</label><br>
+            <input type="text" id="resultado">
     <body>
         <h1>PUC FLIX</h1>
         <h2>puc flix menor</h2>
